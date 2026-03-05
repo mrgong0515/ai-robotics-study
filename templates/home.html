@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 데이터 전송 시 3가지만 기억하자 -->
+    <!-- 1.어디로 2.어떤 방식으로 3.언제 -->
+    <!-- 1.detect페이지로 2.post방식으로 3.객체탐지 버튼 누르면-->
+    <form action="/detect" method="post" enctype="multipart/form-data">
+        <!-- name있는 file은 key값 -->
+        <!-- 받아오는 쪽에서 file이라고 부르면 이 파일을 볼 수 있음 -->
+        <input type="file" name="file">
+        <input type="submit" value="객체탐지">
+    </form>
+
+</body>
+</html>
